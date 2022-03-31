@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
      value =Number(search_params.get("x"))
     if(value == 0)
     value=Math.random()
-    res.write("Computes the values for Math.atan and math.cbrt function."+"\n")
+   
     res.write('Math.log() applied to '+value+" is "+Math.log(value)+"\n");
     res.write('Math.log10() applied to '+value+" is "+Math.log10(value)+"\n");
     res.end('Math.imul() applied to '+value+" is "+Math.imul(value));
